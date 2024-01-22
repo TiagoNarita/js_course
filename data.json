@@ -1,0 +1,14 @@
+{
+    "name": "tiago",
+    "age": 19,
+    "email": "tiagobnarita@gmail.com",
+    "IsSubscribed": true,
+    "Hobbies": [
+        "running",
+        "Gym"
+    ],
+    "Adress": {
+        "city": "New york",
+        "idk": "true"
+    }
+}
