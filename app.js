@@ -9,3 +9,6 @@ numbers = [1,2,3,4]
 show4(... numbers)
 
 console.log("tirei do git hub");
+
+console.log(oi);
+
