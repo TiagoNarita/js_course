@@ -7,3 +7,5 @@ function show4(a, b, c, d) {
 numbers = [1,2,3,4]
 
 show4(... numbers)
+
+console.log("Alterado no giy hub");
