@@ -30,11 +30,38 @@ function password(ps) {
     if (ps === 8) {
         return "Strong Password"
     } else {
-        return"Your password shoudb be 8 characters"
+        return "Your password shoudb be 8 characters"
     }
 }
 
-const res = password(2)
+let res = password(2)
 console.log(res);
 
 //refactoring
+
+let newPass = (ps) => {
+    return ps === 8 ? "Strong Password" : "Your password shoudb be 8 characters"
+}
+
+res = newPass(2)
+console.log(res)
+
+let personMoney = true;
+
+let havemoney = personMoney === true? "Buy Products": "You don`t have money"
+
+console.log(havemoney);
+
+
+
+
+person = {
+    name: "Tiago",
+    age: 20,
+    college: "IFSP"
+}
+
+for (const characteristics in person) {
+   console.log(`- ${characteristics}:${person[characteristics]}`);
+   
+}
