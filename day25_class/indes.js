@@ -63,5 +63,4 @@ person = {
 
 for (const characteristics in person) {
    console.log(`- ${characteristics}:${person[characteristics]}`);
-   
 }
