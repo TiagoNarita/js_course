@@ -50,7 +50,20 @@ console.log(sum);
 
 numberus = [1, 2, 3, 4, 5];
 
-let double = numberus.map(num => num * 2);
+let double = numberus.map(num =>  (num == 3 ? num * 2:num));
 
 console.log(double);
 
+//transforming an object in array;
+
+let peoples = [
+    { firstName: "Tiago", secondName :"Narita"},
+    { firstName: "Douglas", secondName :"mendes"},
+    { firstName: "marcelo", secondName :"grossi"},
+]
+
+let result = peoples.map(peoples => {
+    return [peoples.firstName, peoples.secondName]
+})
+
+console.log(result);
