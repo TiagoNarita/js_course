@@ -33,3 +33,14 @@ console.log(colors);
 });
 
 console.log(colors);
+
+let numberus = [1,2,3,4,18];
+let sum = 0;
+
+const add = (number) => {
+    sum += number;
+}
+
+numberus.forEach(add);
+
+console.log(sum);
