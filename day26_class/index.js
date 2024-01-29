@@ -50,16 +50,16 @@ console.log(sum);
 
 numberus = [1, 2, 3, 4, 5];
 
-let double = numberus.map(num =>  (num == 3 ? num * 2:num));
+let double = numberus.map(num => (num == 3 ? num * 2 : num));
 
 console.log(double);
 
 //transforming an object in array;
 
 let peoples = [
-    { firstName: "Tiago", secondName :"Narita"},
-    { firstName: "Douglas", secondName :"mendes"},
-    { firstName: "marcelo", secondName :"grossi"},
+    { firstName: "Tiago", secondName: "Narita" },
+    { firstName: "Douglas", secondName: "mendes" },
+    { firstName: "marcelo", secondName: "grossi" },
 ]
 
 let result = peoples.map(peoples => {
@@ -67,3 +67,12 @@ let result = peoples.map(peoples => {
 })
 
 console.log(result);
+
+const numbers = [62, 44, 12, 4];
+
+function myFunction(num) {
+    return num * 10;
+}
+
+const newArraay = numbers.map(myFunction);
+console.log(newArraay);
