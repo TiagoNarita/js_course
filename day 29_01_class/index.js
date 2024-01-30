@@ -20,9 +20,21 @@ const computers = [
 
 console.log(computers.filter((com) => com.ram >= 16));
 
-const ages = [32, 33, 16, 40];
+const ages = [32, 33, 16, 40, 10];
 
-console.log(ages.filter(age => age > 18));
+const newAges = ages.filter(age => age > 18);
+console.log(newAges);
+
+//the find() method is another built-in array helper in javascript that allows you
+//to find the first element in an array that matches a specific condition. It returns
+//the value of the first element that satisfies the given testing function, or undefined
+// if no elements is found.
+
+let peoples = [
+    { firstName: "Tiago", secondName: "Narita" },
+    { firstName: "Douglas", secondName: "mendes" },
+    { firstName: "marcelo", secondName: "grossi" },
+]
 
 
 
