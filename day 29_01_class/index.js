@@ -22,7 +22,7 @@ console.log(computers.filter((com) => com.ram >= 16));
 
 const ages = [32, 33, 16, 40, 10];
 
-const newAges = ages.filter(age => age > 18);
+const newAges = ages.filter((age) => age > 18);
 console.log(newAges);
 
 //the find() method is another built-in array helper in javascript that allows you
@@ -33,8 +33,31 @@ console.log(newAges);
 let peoples = [
     { firstName: "Tiago", secondName: "Narita" },
     { firstName: "Douglas", secondName: "mendes" },
-    { firstName: "marcelo", secondName: "grossi" },
-]
+    { firstName: "Marcelo", secondName: "grossi" },
+];
 
+const res = peoples.find((person) => person.firstName.toLowerCase() === "marcelo");
+console.log(res);
 
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
 
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
