@@ -43,7 +43,7 @@ const add = (number) => {
 
 numberus.forEach(add)
 
-console.log(sum);
+console.log(sum)
 
 //the map() method creates a new array populated with the results of calling a 
 //provided function on every elementi in the calling array.

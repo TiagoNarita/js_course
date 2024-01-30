@@ -4,11 +4,11 @@ function show4(a, b, c, d) {
     console.log(c);
     console.log(d);
 }
-numbers = [1,2,3,4]
+numbers = [1, 2, 3, 4]
 
-show4(... numbers)
+show4(...numbers)
 
 console.log("tirei do git hub");
 
-console.log(oi);
+console.log(oi)
 
