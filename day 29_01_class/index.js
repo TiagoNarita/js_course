@@ -9,4 +9,20 @@ const songs = [
     { name: "fuck you", duration: 5.34 },
 ];
 
-console.log(songs.filter(song => song.duration >3);
+console.log(songs.filter((song) => song.duration > 3));
+
+const computers = [
+    { ram: 4, hdd: 100 },
+    { ram: 8, hdd: 200 },
+    { ram: 16, hdd: 300 },
+    { ram: 32, hdd: 400 },
+];
+
+console.log(computers.filter((com) => com.ram >= 16));
+
+const ages = [32, 33, 16, 40];
+
+console.log(ages.filter(age => age > 18));
+
+
+
