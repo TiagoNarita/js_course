@@ -20,3 +20,17 @@ const allProductsBooks = products.every(
     (products) => products.category == "books"
 );
 console.log(allProductsBooks);
+
+/*The reduce() method applies the reducer function to each element of an array, 
+accumulating the results into a single value. Its is often used to perform calculations'
+or aggregation on arrays elements and simplify the array into a single value. */
+
+const numbers = [1, 2, 3, 4, 5];
+
+const num = numbers.reduce((p, c) => {
+    console.log(`Previous: ${p}`);
+    console.log(`Current: ${c}`);
+    return p + c;
+}, 5);
+//this zero is the current value
+console.log(num);
