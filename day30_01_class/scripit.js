@@ -34,3 +34,30 @@ const num = numbers.reduce((p, c) => {
 }, 5);
 //this zero is the current value
 console.log(num);
+
+//In a hole list of people and you want to known the oldest person in your arraw,
+//you can use filter or the reduce method.
+
+const people = [
+    {
+        name: "tiago",
+        age: 20,
+    },
+    {
+        name: "pedro",
+        age: 34,
+    },
+    {
+        name: "matheus",
+        age: 14,
+    },
+    {
+        name: "antonio",
+        age: 89,
+    },
+];
+
+const oldest = people.reduce((p, c) => (c.age > p ? c.age: p), 0);
+console.log(oldest);
+
+const wordFrequency = words.reduce()
