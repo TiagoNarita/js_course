@@ -36,28 +36,19 @@ let peoples = [
     { firstName: "Marcelo", secondName: "grossi" },
 ];
 
-const res = peoples.find((person) => person.firstName.toLowerCase() === "marcelo");
+const res = peoples.find(
+    (person) => person.firstName.toLowerCase() === "marcelo"
+);
 console.log(res);
 
-function startTime()
-{
-var today=new Date();
-var h=today.getHours();
-var m=today.getMinutes();
-var s=today.getSeconds();
-// add a zero in front of numbers<10
-m=checkTime(m);
-s=checkTime(s);
-document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-t=setTimeout('startTime()',500);
+const posts = [
+    { id: 1, content: "Good Post" },
+    { id: 2, content: "Funny Post" },
+    { id: 3, content: "Sad Post" },
+    { id: 4, content: "Good Post" },
+];
 
-}
+const postRes = posts.filter((post) => post.content == "Good Post");
+console.log(postRes);
 
-function checkTime(i)
-{
-if (i<10)
-  {
-  i="0" + i;
-  }
-return i;
-}
+peoples.every(person => person.firstName.length === 4 )
