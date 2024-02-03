@@ -33,7 +33,6 @@ function goCave() {
     update(locations[2]);
 }
 
-
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -64,14 +63,19 @@ function buyWeapon() {
     }
 }
 
-function sellWeapon(){
+function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15;
         goldText.innerText = gold;
         let currentWeapon = inventory.shift();
-      }
+    }
 }
-function fightSlime() {}
+
+function fightSlime() {
+    fighting = 0;
+    goFight();
+}
+
 function fightBeast() {}
 function fightDragon() {
     console.log("Fighting dragon.");
@@ -112,11 +116,9 @@ const monsters = [
         level: 20,
         health: 300,
     },
-]
+];
 
-function goFight() {
-    
-}
+function goFight() {}
 
 const locations = [
     {
@@ -156,3 +158,9 @@ function update(location) {
     button3.onclick = location["button functions"][2];
     text.innerText = location.text;
 }
+
+function attack (){
+
+}
+
+function dodge (){}
