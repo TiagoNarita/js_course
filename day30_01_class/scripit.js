@@ -57,17 +57,28 @@ const people = [
     },
 ];
 
-const oldest = people.reduce((p, c) => (c.age > p ? c.age: p), 0);
+const oldest = people.reduce((p, c) => (c.age > p ? c.age : p), 0);
 console.log(oldest);
 
-const words = [
-    "banana",
-    "morango",
-    "Batata",
-    "caramelo"
-]
+const words = ["banana", "morango", "Batata", "caramelo"];
 
 const wordFrequency = words.reduce((frequencymap, word) => {
-    frequencymap[word] = (frequencymap[word] || 0 + 1)
-    return frequencymap
-},{})
+    frequencymap[word] = frequencymap[word] || 0 + 1;
+    return frequencymap;
+}, {});
+
+//the challenge
+
+const numbers2 = [2, 3, 4, 5];
+
+const calculateProduct = (array) => {
+     return array.reduce((accumulator, current) => {
+        accumulator * current;
+    });
+};
+
+const product
+
+
+
+
