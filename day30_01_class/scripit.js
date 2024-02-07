@@ -72,13 +72,10 @@ const wordFrequency = words.reduce((frequencymap, word) => {
 const numbers2 = [2, 3, 4, 5];
 
 const calculateProduct = (array) => {
-     return array.reduce((accumulator, current) => {
-        accumulator * current;
+    return array.reduce((accumulator, current) => {
+        return accumulator * current;
     });
 };
 
-const product
-
-
-
-
+const product = calculateProduct(numbers2);
+console.log(product);
