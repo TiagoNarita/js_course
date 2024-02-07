@@ -1,5 +1,5 @@
-/*the every() method tests wheter all elements in the array pass the condition specified
-by the provided callback function. It retuns true if the callback function returns true
+/*the every() method tests whether all elements in the array pass the condition specified
+by the provided callback function. It returns true if the callback function returns true
 for every element, and false if any elements fails the condition.*/
 
 const peoples = ["huxn3", "jordh", "alex"];
@@ -12,7 +12,7 @@ console.log(res2);
 products = [
     { nome: "checkers", category: "toys" },
     { nome: "harry", category: "books" },
-    { nome: "iphone", category: "eletronics" },
+    { nome: "iphone", category: "electronics" },
     { nome: "learn php", category: "books" },
 ];
 
@@ -35,12 +35,12 @@ const num = numbers.reduce((p, c) => {
 //this zero is the current value
 console.log(num);
 
-//In a hole list of people and you want to known the oldest person in your arraw,
+//In a hole list of people and you want to known the oldest person in your array,
 //you can use filter or the reduce method.
 
 const people = [
     {
-        name: "tiago",
+        name: "Tiago",
         age: 20,
     },
     {
@@ -60,4 +60,14 @@ const people = [
 const oldest = people.reduce((p, c) => (c.age > p ? c.age: p), 0);
 console.log(oldest);
 
-const wordFrequency = words.reduce()
+const words = [
+    "banana",
+    "morango",
+    "Batata",
+    "caramelo"
+]
+
+const wordFrequency = words.reduce((frequencymap, word) => {
+    frequencymap[word] = (frequencymap[word] || 0 + 1)
+    return frequencymap
+},{})
