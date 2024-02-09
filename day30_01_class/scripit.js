@@ -94,3 +94,7 @@ console.log(map.keys());
 console.log(map.values());
 console.log(map.delete(keyTwo));
 console.log(map);
+
+for (let [key, value] of map){
+    console.log(`${key} -- ${value}`);
+}
