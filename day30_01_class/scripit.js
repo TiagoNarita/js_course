@@ -79,3 +79,14 @@ const calculateProduct = (array) => {
 
 const product = calculateProduct(numbers2);
 console.log(product);
+
+//map
+
+const map = new Map();
+const keyOne = "string";
+const keyTwo = {};
+const keyTree = function () {};
+
+map.set(keyOne, "Value of key one");
+console.log(map);
+
