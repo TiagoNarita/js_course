@@ -84,9 +84,13 @@ console.log(product);
 
 const map = new Map();
 const keyOne = "string";
-const keyTwo = {};
+const keyTwo = { ola: "oi" };
 const keyTree = function () {};
 
 map.set(keyOne, "Value of key one");
+map.set(keyTwo, "Value of key two");
+map.set(keyTree, "Value of key tree");
+console.log(map.keys());
+console.log(map.values());
+console.log(map.delete(keyTwo));
 console.log(map);
-
